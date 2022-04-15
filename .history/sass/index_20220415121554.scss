@@ -1,0 +1,128 @@
+@import './variables';  
+html{
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: $background_Color;
+}
+header #header{
+    display: flex;
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+#header h1{
+    color: $words_Color;
+    cursor: pointer;
+    font-family: $words_font;
+}
+#header ion-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main #container{
+    height: auto;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    // justify-content: center;
+
+}
+#top {
+    height: 45%;
+}
+#image{
+    height: 100%;
+    background-size: cover;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+}
+#contents{
+    width: auto;
+    height: auto;
+    padding: 30px 25px 30px 25px;
+}
+.posts{
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #cbcbcb;
+    padding-bottom: 50px;
+}
+.posts span{
+    font-size: 20px;
+    color: $words_Color;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    font-family: $words_font;
+}
+.posts p{
+    font-size: $font_Size;
+    font-family: $words_font;
+}
+
+footer{
+    height: 200px;
+    background-color: $words_Color;
+}
+@media screen and (max-width: 415px) {
+    main #container{
+        height: auto;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+    #contents{
+        width: auto;
+        height: auto;
+        padding: 5px 5px 10px 5px;
+    }
+    .posts{
+        border-bottom-style: solid;
+        border-width: 2px;
+        border-color: #cbcbcb;
+        padding-bottom: 30px;
+    }
+    .posts span{
+        color: $words_Color;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        font-family: $words_font;
+    }
+}
+// @media screen and (max-width: 376px) {
+//     #contents{
+//         width: auto;
+//         height: auto;
+//         padding: 5px 5px 10px 5px;
+//     }
+//     .posts{
+//         border-bottom-style: solid;
+//         border-width: 2px;
+//         border-color: #cbcbcb;
+//         padding-bottom: 30px;
+//     }
+//     .posts h1{
+//         color: $words_Color;
+//         text-align: center;
+//         margin: 20px 0 20px 0;
+//         font-family: $words_font;
+//     }
+// }

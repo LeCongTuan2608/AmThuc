@@ -1,0 +1,165 @@
+@import './variables';  
+html{
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: $background_Color;
+}
+header #header{
+    display: flex;
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+#header h1{
+    color: $words_Color;
+    cursor: pointer;
+    font-family: $words_font;
+}
+#header ion-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main #container{
+    height: auto;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    // justify-content: center;
+
+}
+#top {
+}
+.image{
+    height: 10%;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+}
+.slick-arrow{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 100rem;
+    position: absolute;
+    align-items: center;
+    font-size: 25px;
+    line-height: 1;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(150, 200, 144);
+    cursor: pointer;
+}
+.slick-arrow:hover{
+    background-color: rgb(70, 145, 191);
+}
+.slick-arrow:active{
+    background-color: $words_Color;
+}
+.slick-prev{
+    left:-60px;
+
+}
+.slick-next{
+    right: -60px;
+}
+.slick-dots{
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform:  translate(-50%,50px);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+.slick-dots li{
+    list-style-type: none;
+}
+.slick-dots button{
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+}
+#contents{
+    width: auto;
+    height: auto;
+    padding: 30px 25px 30px 25px;
+}
+.posts{
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #cbcbcb;
+    padding-bottom: 50px;
+}
+.posts h1{
+    color: $words_Color;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    font-family: $words_font;
+}
+.posts img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+.posts p{
+    font-size: $font_Size;
+    font-family: $words_font;
+}
+#address{
+    border-bottom-style:none;
+}
+footer{
+    height: 200px;
+    background-color: $words_Color;
+}
+@media screen and (max-width: 500px) {
+    main #container{
+        height: auto;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+    #contents{
+        width: auto;
+        height: auto;
+        padding: 5px 5px 10px 5px;
+    }
+    .posts{
+        border-bottom-style: solid;
+        border-width: 2px;
+        border-color: #cbcbcb;
+        padding-bottom: 30px;
+    }
+    .posts h1{
+        color: $words_Color;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        font-family: $words_font;
+    }
+    #address{
+        border-bottom-style:none;
+    }
+}
